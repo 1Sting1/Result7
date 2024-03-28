@@ -21,7 +21,12 @@ class storage_service:
         self.__data = data
         
     # Набор основных методов    
-        
+
+    def create_turn(self, filter_data):
+        #Процессинг
+        key_turn = process_factory.turn_key()
+        processing = process_factory().create(key_turn)
+
     def create_turns(self, start_period: datetime, stop_period:datetime ) -> list:
         """
             Получить обороты за период
