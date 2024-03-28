@@ -23,7 +23,7 @@ class storage_service:
     # Набор основных методов    
 
     def create_turn(self, filter_data):
-
+        #Процессинг
         key_turn = process_factory.turn_key()
         processing = process_factory().create(key_turn)
 
